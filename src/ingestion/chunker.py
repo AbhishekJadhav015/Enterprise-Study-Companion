@@ -1,6 +1,8 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 from typing import List
+from src.utils.exception import CustomException
+import sys
 
 class DocumentChunker:
     "splits documents logically while maintaining context overlap"
@@ -10,7 +12,10 @@ class DocumentChunker:
         # the heierarchy of the text splitter is as follows: paragraphs -> lines -> sentences -> words
         
     def split(self, documents: List[Document]) -> List[Document]:
-        print(f"chunking {len(documents)} pages....")
-        chunks = self.splitter.split_documents(documents)
-        print(f"chunked {len(chunks)} contextual chunks")
-        return chunks
+        try:
+            print(f"chunking {len(documents)} pages....")
+            chunks = self.splitter.split_documents(documents)
+            print(f"chunked {len(chunks)} contextual chunks")
+            return chunks
+        except Exception as e:
+            raise CustomException(e ,sys)

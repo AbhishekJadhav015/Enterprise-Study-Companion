@@ -6,5 +6,16 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
-.venv
+# Environments and Secrets
+.env
+.venv/
+__pycache__/
+
+# Databases and Tracking
+data/
+mlflow.db
+*.db
+*.sqlite
+
+# OS Files
+.DS_Store
