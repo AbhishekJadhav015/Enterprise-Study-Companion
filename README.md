@@ -60,7 +60,7 @@ Study-Companion/
 ## 💻 Local Installation & Setup
 ### 1. Clone the repository
 ```Bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+git clone [https://github.com/AbhishekJadhav015/Enterprise-Study-Companion.git](https://github.com/AbhishekJadhav015/Enterprise-Study-Companion.git)
 cd Study-Companion
 ```
 
