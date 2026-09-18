@@ -60,14 +60,15 @@ Study-Companion/
 ## 💻 Local Installation & Setup
 ### 1. Clone the repository
 ```Bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+git clone [https://github.com/AbhishekJadhav015/Enterprise-Study-Companion.git](https://github.com/AbhishekJadhav015/Enterprise-Study-Companion.git)
 cd Study-Companion
 ```
 
 ### 2. Environment Setup (using uv)
 Ensure uv is installed, then install dependencies:
 ```Bash
-uv pip install -r requirements.txt```
+uv pip install -r requirements.txt
+```
 
 ### 3. Configure API Keys
 Create a .env file in the root directory and add your Google Gemini API key:
